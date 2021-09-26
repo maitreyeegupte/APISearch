@@ -21,23 +21,23 @@ public class TestActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        String img_message = intent.getStringExtra(API_Search.IMAGE_MESSAGE);
+        String img_message = intent.getStringExtra(APISearchActivity.IMAGE_MESSAGE);
         ImageView imageView = (ImageView)findViewById(R.id.imageView);
         new downloadImage(imageView).execute(img_message);
 
-        String text_message = intent.getStringExtra(API_Search.TEXT_MESSAGE);
+        String text_message = intent.getStringExtra(APISearchActivity.TEXT_MESSAGE);
         TextView tvResults1 = findViewById(R.id.tvResults1);
         tvResults1.setMovementMethod(new ScrollingMovementMethod());
         tvResults1.setText(text_message);
 
-        String title_message = intent.getStringExtra(API_Search.TITLE_MESSAGE);
+        String title_message = intent.getStringExtra(APISearchActivity.TITLE_MESSAGE);
         TextView tvResults = findViewById(R.id.tvResults);
         tvResults.setMovementMethod(new ScrollingMovementMethod());
         tvResults.setText(title_message);
 
         this.setTitle(title_message);
 
-        String date_message = intent.getStringExtra(API_Search.DATE_MESSAGE);
+        String date_message = intent.getStringExtra(APISearchActivity.DATE_MESSAGE);
         TextView tvResults2 = findViewById(R.id.tvResults2);
         tvResults2.setMovementMethod(new ScrollingMovementMethod());
         tvResults2.setText(date_message);

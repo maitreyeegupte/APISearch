@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/APISearchAndroid.iml" filepath="$PROJECT_DIR$/APISearchAndroid.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/APISearchAndroid.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/APISearchAndroid.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/APISearch.iml" filepath="$PROJECT_DIR$/.idea/modules/APISearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/APISearch.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/APISearch.app.iml" />
     </modules>
   </component>
 </project>
