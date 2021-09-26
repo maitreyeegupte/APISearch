@@ -23,7 +23,8 @@ import android.widget.*;
 
 public class APISearchActivity extends Activity {
 
-    private final String API_URL = "http://10.0.2.2:8080/api/s/";
+    //private final String API_URL = "http://10.0.2.2:8080/api/s/";
+    private final String API_URL = "http://127.0.0.1:8080/api/s/";
     private final String LOG_TAG = "MOBILE COMPUTING";
 
     private RecyclerView m_recView;
