@@ -23,8 +23,8 @@ import android.widget.*;
 
 public class APISearchActivity extends Activity {
 
-    //private final String API_URL = "http://10.0.2.2:8080/api/s/";
-    private final String API_URL = "http://127.0.0.1:8080/api/s/";
+    private final String API_URL = "http://10.0.2.2:8080/api/s/";
+    //private final String API_URL = "http://127.0.0.1:8080/api/s/";
     private final String LOG_TAG = "MOBILE COMPUTING";
 
     private RecyclerView m_recView;
@@ -111,7 +111,7 @@ public class APISearchActivity extends Activity {
                             // Get the properties
                             obj = resultJsonArray.getJSONObject(i);
                             Datum datum = new Datum(obj.getInt("id"), obj.getString("title"),
-                                    obj.getString("date"), obj.getString("text"), obj.getString("image"));
+                                    obj.getString("date"), obj.getString("text"), obj.getString("image").replace("http","https"));
 
                             // Add the item to the view
                             ((DatumAdapter) m_adapter).addItem(datum, m_adapter.getItemCount());
