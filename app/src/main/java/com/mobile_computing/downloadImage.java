@@ -29,19 +29,23 @@ public class downloadImage extends AsyncTask<String,Void, Bitmap> {
         try{
             URL url = new URL(urlOfImage); //TODO dead code?
             //HTTPURLConnection.setFollowRedirects(true);
-            URLConnection insecureConn = url.openConnection();
-            insecureConn.connect();
+            //URLConnection insecureConn = url.openConnection();
+            //insecureConn.connect();
+            URLConnection conn = url.openConnection();
+            conn.connect();
             //HTTP 301 redirect may occur here
-            Log.i(TAG, "attempting redirect");
-            InputStream is = insecureConn.getInputStream();
-            URL redirUrl = insecureConn.getURL();
-            is.close();
-            URLConnection redirectConn = redirUrl.openConnection();
-            redirectConn.connect();
-            is = redirectConn.getInputStream();
-            bitmap = BitmapFactory.decodeStream(is);
-            is.close();
-            imageView.setImageBitmap(bitmap);
+            //Log.i(TAG, "attempting redirect");
+            //InputStream is = insecureConn.getInputStream();
+            //URL redirUrl = insecureConn.getURL();
+            //is.close();
+            //URLConnection redirectConn = redirUrl.openConnection();
+            //redirectConn.connect();
+            //is = redirectConn.getInputStream();
+
+            bitmap = BitmapFactory.decodeStream(conn.getInputStream());
+
+            //imageView.setImageBitmap(bitmap);
+            //is.close();
 
         }catch(Exception e){
             e.printStackTrace();

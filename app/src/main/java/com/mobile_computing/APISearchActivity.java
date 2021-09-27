@@ -67,7 +67,7 @@ public class APISearchActivity extends Activity {
                 String img_msg = "" + ((DatumAdapter) m_adapter).getItem(position).imageUrl();
                 String date_msg = "" + ((DatumAdapter) m_adapter).getItem(position).date();
 
-                intent.putExtra(TITLE_MESSAGE, title_msg);
+                intent.putExtra(TITLE_MESSAGE,title_msg);
                 intent.putExtra(TEXT_MESSAGE,text_msg);
                 intent.putExtra(IMAGE_MESSAGE,img_msg);
                 intent.putExtra(DATE_MESSAGE,date_msg);
