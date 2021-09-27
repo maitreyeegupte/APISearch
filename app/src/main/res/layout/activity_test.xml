@@ -4,31 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="20dp"
-    android:layout_marginTop="20dp"
-    android:layout_marginEnd="20dp"
-    android:layout_marginRight="20dp"
-    android:gravity="center_horizontal"
+    android:padding="5pt"
+
+    android:layout_gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".TestActivity">
+
+
 
     <TextView
         android:id="@+id/tvResults"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="111dp" />
+        android:gravity="top"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left" />
 
     <TextView
         android:id="@+id/tvResults1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+
         android:gravity="center_horizontal"
         android:scrollbars="vertical"
         android:text="TextView" />
@@ -37,10 +38,7 @@
         android:id="@+id/tvResults2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+
         android:gravity="center_horizontal"
         android:scrollbarAlwaysDrawVerticalTrack="false"
         android:scrollbars="vertical"
@@ -57,8 +55,5 @@
         android:gravity="center_horizontal"
         android:text="Back" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+
 </LinearLayout>
